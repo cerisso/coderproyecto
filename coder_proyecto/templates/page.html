@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mi aplicacion con django</title>
+</head>
+<body>
+    <h1>Soy un Crack</h1>
+    <p>
+        Esta es mi pagina web
+
+    </p>
+    <p>Fecha y hora: {{fecha_hora}}</p>
+    <h2> Bienvenid@ {{nombre}} {{apeliido}}</h2>
+
+    <ul> 
+        {% for nota  in  calificaciones %}           
+         {% if nota > 6 %}
+             <li>{{nota}}</li>
+                
+         {% endif %}
+        {% endfor %}
+    </ul>
+
+    <iframe src="https://giphy.com/embed/l3giLj8coa2HVnzgeF" width="480" height="302" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/wallstreet-wallstreetbets-kid-bets-l3giLj8coa2HVnzgeF">via GIPHY</a></p>
+    
+</body>
+</html>
